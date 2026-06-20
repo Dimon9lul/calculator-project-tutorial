@@ -139,7 +139,7 @@ variable = 42  # You can add comments on the same line too
 
 ## 🚀 Getting Started
 
-1. **Open the `calculator.py` file** in your editor or IDE (VS Code, PyCharm, IDLE, etc.)
+1. **Open the `calculator_template.py` file** in your editor or IDE (VS Code, PyCharm, IDLE, etc.)
 2. **Read the TODO comment** at the top of the file
 3. **Start coding!** Use only the Python concepts listed above
 4. **Test your program** by running it and trying different expressions
@@ -177,7 +177,7 @@ To maintain the learning value of this project, **DO NOT USE** these tools and t
 - **`eval()`** - Evaluates Python code from a string (defeats the purpose!)
   ```python
   # DON'T do this:
-  result = eval("5 + 3")  # This is cheating! 😄
+  result = eval("5 + 3")  # This is cheating!
   ```
 - **`exec()`** - Executes Python code from a string
   ```python
@@ -238,4 +238,4 @@ Once you've completed the basic calculator:
 
 ---
 
-**Good luck! Remember: struggling with code is part of learning. Enjoy the process!**
+**Good luck! Remember: struggling with code is part of programming. Enjoy the process!**
