@@ -9,16 +9,18 @@ Create a Python program that:
 - Parses the expression to extract numbers and operators
 - Performs the calculation
 - Displays the result to the user
-- Repeats until the user decides to quit
+- (Optional) Repeats until the user decides to quit
 
 This project will help you practice fundamental Python concepts while building something functional and satisfying!
 
-## 📚 Python Concepts You'll Use
+## 📚 Python Concepts you may use
+
+If you are unfamiliar with some of the concepts shown here, you may look them up online to learn more. **IMPORTANT:** Not all concepts shown here are necessary to build a console calculator. Stick to what you know best!
 
 ### 1. **Variables and Data Types**
 Store information in your program using variables and understand different data types:
 ```python
-number = 5              # integer
+number = 5             # integer
 price = 19.99          # float
 message = "Hello"      # string
 is_valid = True        # boolean
@@ -36,6 +38,22 @@ expression.split("+")   # Split by operator: ["5 ", " 3 * 2"]
 
 operator = "+"
 operator.lower()        # Convert to lowercase (useful for validating input)
+```
+
+A very common and fast way to convert and output data as strings can be done using **f-strings:**
+```python
+
+number0 = 6
+number1 = 4
+number2 = number0 + number1
+
+# When using '+' to add strings together, expressions can become unreadable and very long.
+print("The sum of " + str(number0) + " + " + str(number1) + " = " + str(number2))
+
+# f-strings make strings more readable. They also handle type-conversion automatically.
+print(f"The sum of {number0} + {number1} = {number2}")
+
+# Both print statements print the exact same thing!
 ```
 
 ### 3. **Type Conversion**
@@ -67,7 +85,7 @@ else:
     print("Number is less than 5")
 ```
 
-### 6. **While Loops**
+### 6. **for/while Loops**
 Repeat actions multiple times:
 ```python
 count = 0
@@ -75,15 +93,26 @@ while count < 5:
     print(f"Count: {count}")
     count = count + 1
 
-# Keep asking user until they quit
-while True:
-    user_input = input("Enter something (or 'quit' to exit): ")
-    if user_input.lower() == "quit":
-        break
-    print(f"You entered: {user_input}")
+# Same functionality as a for-loop
+for i in range(0,5):
+    print(i)
 ```
 
-### 7. **Operators**
+**Hint:** You may use a loop to keep the user inside the program and let them evaluate multiple expressions!
+
+### 7. **Iterating with a loop**
+You can use for loops on iterator objects in python. Such objects are **strings, lists, dictionaries, tuples and sets.**
+```python
+a_string = "Hello, World!"
+a_list = ["H", "e", "l", "l", "o"]
+
+# This will print every character from a_string separately
+for character in a_string:
+    print(character)
+```
+[More](https://www.w3schools.com/python/python_iterators.asp) on iterators.
+
+### 8. **Operators**
 Perform calculations and comparisons:
 ```python
 # Arithmetic operators
@@ -101,7 +130,7 @@ if a != b:
     pass
 ```
 
-### 8. **Comments and Code Organization**
+### 9. **Comments and Code Organization**
 Document your code and keep it readable:
 ```python
 # This is a comment explaining the code below
@@ -121,10 +150,7 @@ variable = 42  # You can add comments on the same line too
 Here's how you might approach this:
 
 ### Step 1: Get User Input
-Ask the user to enter an expression:
-```python
-expression = input("Enter a mathematical expression (e.g., '5 + 3'): ")
-```
+Ask the user to enter an expression
 
 ### Step 2: Parse the Expression
 Separate the numbers and operator from the input string:
@@ -132,27 +158,13 @@ Separate the numbers and operator from the input string:
 - Identify which operator was used (+, -, *, /)
 
 ### Step 3: Convert to Numbers
-Convert the string numbers to integers or floats:
-```python
-num1 = float(number_string)
-num2 = float(another_number_string)
-```
+Convert the string numbers to integers or floats
 
 ### Step 4: Perform the Calculation
-Use conditional statements to determine which operation to perform:
-```python
-if operator == "+":
-    result = num1 + num2
-elif operator == "-":
-    result = num1 - num2
-# ... and so on
-```
+Use conditional statements to determine which operation to perform
 
 ### Step 5: Display the Result
-Print the result to the user:
-```python
-print(f"{num1} {operator} {num2} = {result}")
-```
+Print the result to the user
 
 ### Step 6: Repeat (Optional)
 Use a `while` loop to let the user calculate multiple expressions
@@ -184,7 +196,7 @@ To maintain the learning value of this project, **DO NOT USE** these tools and t
 - Importing calculation libraries
 - Using regex (regular expressions) for parsing
 
-**Why?** These tools are powerful, but using them here would skip the learning experience. The goal is to understand *how* to build a calculator yourself, not to use someone else's solution!
+**Why?** These tools are powerful, but using them here would skip the learning experience. By working with what you've got, you can learn to actually solve the problems all by yourself and develop your own solutions in circumstances, where nobody has found a solution before.
 
 ## 🎓 Learning Outcomes
 
@@ -226,4 +238,4 @@ Once you've completed the basic calculator:
 
 ---
 
-**Good luck! Remember: struggling with code is part of learning. Enjoy the process! 🎉**
+**Good luck! Remember: struggling with code is part of learning. Enjoy the process!**

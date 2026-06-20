@@ -3,6 +3,9 @@
 # Your solution might look different, and that's perfectly fine!
 # The important thing is that it works and uses only basic Python concepts.
 
+# You might notice that this code uses the try/except keywords. Those are used to prevent the program for a crashing!
+# If you haven't used try/except yourself, that's fine! It was not required in the instructions. Look try/except up on the internet for more info.
+
 def main():
     """Main function that runs the calculator program."""
     print("=" * 50)
